@@ -1,3 +1,4 @@
+/* nav*/
 #login:hover {
     background-color: var(--bs-primary) !important; /* Bootstrap primary color */
     color: #fff !important;
@@ -8,4 +9,21 @@
     background-color: var(--bs-danger)  !important; /* Bootstrap primary color */
     color: #fff !important;
     border-color: var(--bs-danger)  !important;
+}
+#nav-links:hover {
+    background-color: white !important;
+    color: black;
+}
+
+/* main */
+.c-item {
+    height: 640px;
+}
+.c-image {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.car-cap {
+    margin-top: 11%;
 }
