@@ -1,3 +1,9 @@
+body {
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 134%; /* compensate scaling shrink */
+}
+
 /* nav*/
 #login:hover {
     background-color: var(--bs-primary) !important; /* Bootstrap primary color */

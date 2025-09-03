@@ -1,4 +1,5 @@
 import {useNavigate} from 'react-router-dom';  
+import { NavLink } from "react-router-dom";
 
 function Navigation() {
     const navigate = useNavigate();
@@ -13,10 +14,10 @@ function Navigation() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav fs-4">
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#" id="nav-links">Home</a>
+                            <NavLink to="/" className="nav-link active me-3" aria-current="homepage" id="nav-links">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#" id="nav-links">Services</a>
+                            <NavLink to="/services" className="nav-link active" aria-current="services" id="nav-links">Services</NavLink>
                         </li>
                     </ul>
                     <ul className="navbar-nav ms-auto">
