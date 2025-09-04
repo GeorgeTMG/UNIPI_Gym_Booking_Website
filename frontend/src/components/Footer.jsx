@@ -2,8 +2,8 @@ export default function Footer() {
     return (
         <>
             <footer>
-                <div className="bg-dark">
-
+                <div>
+                    Footer Content
                 </div>
             </footer>
         </>

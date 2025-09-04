@@ -1,7 +1,7 @@
 body {
-  transform: scale(0.75);
+  transform: scale(0.9);
   transform-origin: top left;
-  width: 134%; /* compensate scaling shrink */
+  width: 111%; /* compensate scaling shrink */
 }
 
 /* nav*/
@@ -29,7 +29,4 @@ body {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
-}
-.car-cap {
-    margin-top: 11%;
 }
