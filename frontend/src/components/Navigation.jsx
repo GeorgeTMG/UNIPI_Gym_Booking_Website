@@ -22,7 +22,11 @@ export default function Navigation() {
                     </ul>
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item pe-4">
-                        <button className="btn btn-outline-primary bg-light fw-bold text-dark fs-5" id="login">Login</button>
+                        <button 
+                            className="btn btn-outline-primary bg-light fw-bold text-dark fs-5" 
+                            id="login"
+                            onClick={() => navigate('/login')}
+                        >Login</button>
                         </li>
                         <li className="nav-item">
                             <button

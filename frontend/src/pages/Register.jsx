@@ -1,5 +1,6 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { NavLink } from "react-router-dom";
 
 export default function Register() {
 
@@ -41,7 +42,7 @@ export default function Register() {
                                     </div>
                                     <div>
                                         <p className='mb-0 mt-3'>Already have an account?</p>
-                                        <Button variant="success" className="fs-5 fw-bold">Login</Button>
+                                        <Button as={NavLink} to="/login" variant="success" className="fs-5 fw-bold">Login</Button>
                                     </div>
                                 </div>
                             </Form>
