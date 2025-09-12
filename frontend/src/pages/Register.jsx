@@ -34,7 +34,7 @@ export default function Register() {
                                         </Form.Group>
                                         <Form.Group className="mb-4" controlId="formPlaintextPassword">
                                             <Form.Label>Password</Form.Label>
-                                            <Form.Control type="password" placeholder="Enter a password with 8-12 characters" />
+                                            <Form.Control type="password" placeholder="Enter a password (8-12 characters)" />
                                         </Form.Group>
                                     </div>
                                     <div className="d-flex" id='register-btn'>
@@ -42,7 +42,7 @@ export default function Register() {
                                     </div>
                                     <div>
                                         <p className='mb-0 mt-3'>Already have an account?</p>
-                                        <Button as={NavLink} to="/login" variant="success" className="fs-5 fw-bold">Login</Button>
+                                        <Button as={NavLink} to="/login" variant="success" className="fs-6 fw-bold">Login</Button>
                                     </div>
                                 </div>
                             </Form>
