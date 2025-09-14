@@ -29,7 +29,7 @@ export default function Login() {
                                     </div>
                                     <div>
                                         <p className='mb-0 mt-4'>Don't have an account?</p>
-                                        <Button as={NavLink} to="/register" variant="primary" className="fs-6 fw-bold">Register</Button>
+                                        <Button as={NavLink} to="/register" type="submit" variant="primary" className="fs-6 fw-bold">Register</Button>
                                     </div>
                                 </div>
                             </Form>
