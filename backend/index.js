@@ -3,7 +3,7 @@ import cors from "cors";
 import bcrypt from "bcrypt";
 import dotenv from "dotenv";
 
-import Users from "./models/User.js"
+import User from "./models/User.js"
 
 dotenv.config();
 const app = express();
@@ -23,21 +23,24 @@ app.post("/register", async (req, res) => {
     // Hash the password
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    console.log({
+    const newUser = new User({
       firstName,
       lastName,
-      username,
-      email,
-      password: hashedPassword,
       country,
       city,
       address,
-      role
+      email,
+      username,
+      password: hashedPassword,
+      role: "pending"
     });
 
-    // Respond with success (pretend)
-    res.status(201).json({ message: "Registration successful" });
+    await newUser.save();
+
+    // Respond with success (201 because resource is created but it awaits admin approval)
+    res.status(201).json({ message: "Registration successful, awaiting admin approval"});
   } catch (err) {
+    // Respond with error
     res.status(500).json({ error: "Registration failed" });
   }
 });

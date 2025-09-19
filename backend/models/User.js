@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   address: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   username: { type: String, required: true, unique: true },
-  passwordHash: { type: String, required: true },
+  password: { type: String, required: true },
   role: { type: String, enum: ["pending", "user", "admin"], default: "pending" }
 }, { timestamps: true });
 
